@@ -1,0 +1,26 @@
+/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+/* Custom components */
+@layer components {
+  .pokemon-card {
+    @apply rounded-2xl p-3 shadow-lg;
+  }
+
+  .type-badge {
+    @apply px-3 py-1 rounded-full text-xs font-semibold text-white text-center;
+  }
+
+  .stat-bar {
+    @apply h-2 rounded-full;
+  }
+}
